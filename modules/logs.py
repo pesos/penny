@@ -1,7 +1,8 @@
 import urllib
 import urllib2
+import json
 
-url = 'http://pastebin.com/api/api_post.php'
+url = 'http://paste.kde.org/'
 
 def logs(phenny, input):
 	text = ''
@@ -9,21 +10,28 @@ def logs(phenny, input):
 		num = 0
 	else:
 		num = int(input.split(' ')[1])
-	f = open('pes-os.log', 'r')
-	for line in f.readlines()[-num:]:
-		text = text + line
+	try:
+		f = open('pes-os.log', 'r')
+		for line in f.readlines()[-num:]:
+			text = text + line
+	except:
+		phenny.say("Log file can't be read :( ")
+		return
+	try:
+		values = {'api_submit':'true',
+		  'mode':'json',
+	          'paste_data':text,
+		  'paste_private':'no',
+		  'paste_lang':'Text'}
 
-	values = {'api_option':'paste',
-          'api_dev_key':'d8a90aa1dc591a75d5beeb91fd6f7e30',
-          'api_paste_code':text,
-	  'api_paste_private' : '0',
-	  'api_paste_format':'mirc'}
-
-	data = urllib.urlencode(values)
-	req = urllib2.Request(url, data)
-	response = urllib2.urlopen(req)
-	the_page = response.read()
-	phenny.say(input.nick+': '+the_page)
+		data = urllib.urlencode(values)
+		req = urllib2.Request(url, data)
+		response = urllib2.urlopen(req)
+		the_page = json.loads(response.read())
+		phenny.say(input.nick+': '+'http://paste.kde.org/'+the_page['result']['id'])
+	except:
+		phenny.say("Can't create paste :( ")
+		return
 	
 logs.commands = ['logs']
 logs.priority = 'medium'
