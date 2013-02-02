@@ -13,6 +13,5 @@ Usage :
 
 This command in the channel generates a paste.kde.org link with the last 'n' lines from the channel #pes-os
 
-If the argument is missing, it generates a paste of the entire log from the beginning.
-This is not guaranteed to be fast. 
+If the argument is missing, it generates a paste of the entire log from the beginning. This is not guaranteed to be fast. 
 
