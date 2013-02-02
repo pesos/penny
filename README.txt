@@ -3,8 +3,8 @@ A fork of phenny from Sean B. Palmer, http://inamidst.com/sbp/
 The bot has been customized for the IRC channel of PES Open Source Community, #pes-os.  
 
 Installation :
-
-Run ./phenny
+1) Get the source of phenny
+2) Run ./phenny
 
 Note : The logs are saved in a file called pes-os.log in the same directory as phenny 
 
