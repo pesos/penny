@@ -25,19 +25,19 @@ def check_python_version():
 def create_default_config(fn): 
    f = open(fn, 'w')
    print >> f, trim("""\
-   nick = 'phenny'
-   host = 'irc.example.net'
-   channels = ['#example', '#test']
-   owner = 'yournickname'
+   nick = 'logbot'
+   host = 'irc.freenode.net'
+   channels = ['#pes-os', '##facepalm']
+   owner = 'phalgun'
 
    # password is the NickServ password, serverpass is the server password
    # password = 'example'
    # serverpass = 'serverpass'
 
    # These are people who will be able to use admin.py's functions...
-   admins = [owner, 'someoneyoutrust']
+   admins = [owner, 'akshayms', 'srp_', 'sush24']
    # But admin.py is disabled by default, as follows:
-   exclude = ['admin']
+   # exclude = ['admin']
 
    # If you want to enumerate a list of modules rather than disabling
    # some, use "enable = ['example']", which takes precedent over exclude

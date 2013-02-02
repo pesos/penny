@@ -9,13 +9,14 @@ def logs(phenny, input):
 		num = 0
 	else:
 		num = int(input.split(' ')[1])
-	f = open('/home/phalgun/coding/example.log', 'r')
+	f = open('pes-os.log', 'r')
 	for line in f.readlines()[-num:]:
 		text = text + line
 
 	values = {'api_option':'paste',
           'api_dev_key':'d8a90aa1dc591a75d5beeb91fd6f7e30',
           'api_paste_code':text,
+	  'api_paste_private' : '0',
 	  'api_paste_format':'mirc'}
 
 	data = urllib.urlencode(values)
