@@ -1,6 +1,6 @@
 A fork of phenny from Sean B. Palmer, http://inamidst.com/sbp/
 
-The bot has been customized to run as a logger for the IRC channel of PES Open Source Community, #pes-os. The bot is called 'Penny' 'cos we love TBBT and Penny! 
+The bot has been customized to run as a logger for the IRC channel of PES Open Source Community, #pes-os. The bot is called 'penny' 'cos we love TBBT and Penny! 
 
 Installation :
 1) Get the source of phenny
