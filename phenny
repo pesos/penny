@@ -25,7 +25,7 @@ def check_python_version():
 def create_default_config(fn): 
    f = open(fn, 'w')
    print >> f, trim("""\
-   nick = 'penny'
+   nick = 'pennythebot'
    host = 'irc.freenode.net'
    channels = ['#pes-os', '##facepalm']
    owner = 'phalgun'

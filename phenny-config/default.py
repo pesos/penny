@@ -1,6 +1,6 @@
-nick = 'phbot'
+nick = 'pennythebot'
 host = 'irc.freenode.net'
-channels = ['##facepalm']
+channels = ['#pes-os', '##facepalm']
 owner = 'phalgun'
 
 # password is the NickServ password, serverpass is the server password
@@ -8,9 +8,9 @@ owner = 'phalgun'
 # serverpass = 'serverpass'
 
 # These are people who will be able to use admin.py's functions...
-admins = [owner]
+admins = [owner, 'akshayms', 'srp_', 'sush24']
 # But admin.py is disabled by default, as follows:
-exclude = ['admin']
+exclude = ['tell']
 
 # If you want to enumerate a list of modules rather than disabling
 # some, use "enable = ['example']", which takes precedent over exclude

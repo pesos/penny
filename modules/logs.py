@@ -1,6 +1,7 @@
 import urllib
 import urllib2
 import json
+import os
 
 url = 'http://paste.kde.org/'
 
@@ -10,6 +11,11 @@ def logs(phenny, input):
 		num = 0
 	else:
 		num = int(input.split(' ')[1])
+
+	if os.path.exists('pes-os.log') is False:
+		phenny.say("Log file is missing! :O")
+		return
+
 	try:
 		f = open('pes-os.log', 'r')
 		for line in f.readlines()[-num:]:
