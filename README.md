@@ -5,7 +5,7 @@ Penny
 
 A fork of phenny from [Sean B. Palmer](http://inamidst.com/sbp/)
 
-The bot has been customized to run as a logger for the IRC channel of [PES Open Source Community](http://pesos.github.com/), [#pes-os](http://webchat.freenode.net/?channels=pes-os). The bot is called 'penny' 'cos we love [TBBT](http://en.wikipedia.org/wiki/The_Big_Bang_Theory) and [Penny](http://en.wikipedia.org/wiki/Penny_(The_Big_Bang_Theory))! 
+The bot has been customized to run as a logger for the IRC channel of [PES Open Source Community](http://pesos.github.com/), [#pes-os](http://webchat.freenode.net/?channels=pes-os). The bot is called 'penny' 'cos we love [TBBT](http://en.wikipedia.org/wiki/The_Big_Bang_Theory) and [Penny](http://en.wikipedia.org/wiki/Penny_(The_Big_Bang_Theory)! 
 
 ##Installation
 
