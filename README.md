@@ -18,7 +18,7 @@ The bot has been customized to run as a logger for the IRC channel of [PES Open 
 
 `.logs <n>`
 
-This command in the channel generates a [paste.kde.org](http://paste.kde.org) link with the last 'n' lines from the channel `#pes-os`
+This command in the channel generates a [paste.kde.org](http://paste.kde.org) link with the last 'n' lines from the channel `#pes-os`.
 
 If the argument is missing, it generates a paste of the entire log from the beginning. This is not guaranteed to be fast.
 
